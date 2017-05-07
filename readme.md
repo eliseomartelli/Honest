@@ -2,13 +2,13 @@
 An opensource, Firebase-packed, secret sharing app.
 
 ---
-#### Preview
+#### Screenshot
 
-![](preview.png)
+<img src="preview.png" width="40%">
 
 #### Download
 
-Download the app [here]().
+Download the app [here](https://github.com/eliseomartelli/Honest/releases/download/1.0/app-release.apk).
 
 
 ---
