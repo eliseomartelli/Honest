@@ -47,7 +47,7 @@ public class PostActivity extends AppCompatActivity {
     public void postClick(View v) {
 
         if (mText.getText().toString().matches("") || mAgeInput.getText().toString().matches("")) {
-            Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(v, R.string.everyfield, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         } else {
             Honest honest = new Honest();

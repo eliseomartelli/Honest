@@ -46,22 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Instantiating Firebase
         FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
+        mDatabase.setPersistenceEnabled(true);
         final DatabaseReference honestReference = mDatabase.getReference(DatabaseKeys.HONEST);
         final Query honest = honestReference.orderByKey().limitToLast(100);
-        honest.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
-                    Honest honest = postSnapshot.getValue(Honest.class);
-                    Log.d("honest", honest.getText());
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.e(getClass().getName(), databaseError.getMessage());
-            }
-        });
 
         mMainRecyclerView.setHasFixedSize(false);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
@@ -113,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    static class HonestHolder extends RecyclerView.ViewHolder {
+    public static class HonestHolder extends RecyclerView.ViewHolder {
 
         @BindView(R.id.sex_color)
         LinearLayout mSexColor;

@@ -7,4 +7,5 @@
     <string name="female">Woman</string>
     <string name="age">Age</string>
     <string name="secret">Secret</string>
+    <string name="everyfield">You\'ve to specify every field.</string>
 </resources>
