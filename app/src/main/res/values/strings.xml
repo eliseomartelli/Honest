@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Honest</string>
+    <string name="action_settings">Nothing.</string>
+    <string name="years_old">%1$s years old</string>
+    <string name="title_activity_post">Post</string>
+    <string name="male">Man</string>
+    <string name="female">Woman</string>
+    <string name="age">Age</string>
+    <string name="secret">Secret</string>
+</resources>
