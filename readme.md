@@ -8,7 +8,7 @@ An opensource, Firebase-packed, secret sharing app.
 
 #### Download
 
-Download the app [here](https://github.com/eliseomartelli/Honest/releases/download/1.0/app-release.apk).
+Download the app [here](https://github.com/eliseomartelli/Honest/releases/download/1.0.1/app-release.apk).
 
 
 ---
